@@ -1,0 +1,19 @@
+<p>get-single-icu-details works!</p>
+
+<h1>icu</h1>
+<input #currentIcuId type="text" id="currentIcuId" name="currentIcuId?" required>
+<button (click)="getCurrentId(currentIcuId.value)">Submit</button>
+
+<table>
+  <tr>
+  <th>ID</th>
+  <th>NoOfBeds</th>
+  <th>Layout</th>
+  </tr>
+
+  <tr>
+   <td>{{ currentIcu?.id}}</td>
+   <td>{{ currentIcu?.numberOfBeds}}</td>
+   <td>{{ currentIcu?.layout}}</td>
+ </tr>
+  </table>

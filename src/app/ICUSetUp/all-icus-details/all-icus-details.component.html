@@ -1,0 +1,15 @@
+<p>all-icus-details works!</p>
+<h1> All ICU</h1>
+ <table>
+   <tr>
+   <th>ID</th>
+   <th>NoOfBeds</th>
+   <th>Layout</th>
+   </tr>
+
+   <tr *ngFor="let icu of icuList">
+    <td>{{icu.id}}</td>
+    <td>{{icu.numberOfBeds}}</td>
+    <td>{{icu.layout}}</td>
+  </tr>
+   </table>
