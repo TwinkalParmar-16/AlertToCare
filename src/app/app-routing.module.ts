@@ -9,6 +9,10 @@ import { DeleteIcuDetailsComponent} from '../app/ICUSetUp/delete-icu-details/del
 import {RegisterIcuDetailsComponent} from '../app/ICUSetUp/register-icu-details/register-icu-details.component';
 import {UpdateIcuDetailsComponent} from '../app/ICUSetUp/update-icu-details/update-icu-details.component';
 import { GetSingleIcuDetailsComponent} from '../app/ICUSetUp/get-single-icu-details/get-single-icu-details.component';
+import { AlertAuthenticationComponent } from '../app/Alert/alert-authentication/alert-authentication.component';
+import { AlertHomePageComponent} from '../app/Alert/alert-home-page/alert-home-page.component';
+import { SendAlertsComponent } from '../app/Alert/send-alerts/send-alerts.component';
+
 const routes: Routes = [
   { 
     path: '',   
@@ -23,6 +27,10 @@ const routes: Routes = [
       path: 'Authentication', // child route path
       component: IcuAuthenticationComponent // child route component that the router renders
        },
+       {
+         path:'AlertAuthentication',
+         component: AlertAuthenticationComponent
+       }
        
       ] 
       
@@ -55,10 +63,20 @@ const routes: Routes = [
          }
         ]  
     },
+
+    {
+      path:'AlertHomePage',
+      component:AlertHomePageComponent,
+      children:[
+        {
+          path:'SendAlert',
+          component:SendAlertsComponent
+        }
+      ]
+    },
     {
       path:"**",
       component:NotFoundComponent
-
     }
   
 ];

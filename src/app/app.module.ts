@@ -14,7 +14,11 @@ import { UpdateIcuDetailsComponent } from './ICUSetUp/update-icu-details/update-
 //connect to api
 import { ConnectToIcuControllerService} from './IcuServices/connect-to-icu-controller.service';
 import { HttpClientModule } from '@angular/common/http';
-import { GetSingleIcuDetailsComponent } from './ICUSetUP/get-single-icu-details/get-single-icu-details.component';
+import { AlertAuthenticationComponent } from './Alert/alert-authentication/alert-authentication.component';
+import { AlertHomePageComponent } from './Alert/alert-home-page/alert-home-page.component';
+import { SendAlertsComponent } from './Alert/send-alerts/send-alerts.component';
+import { ConnectToAlertControllerService } from './AlertService/connect-to-alert-controller.service';
+//import { GetSingleIcuDetailsComponent } from './ICUSetUP/get-single-icu-details/get-single-icu-details.component';
 
 
 @NgModule({
@@ -28,7 +32,10 @@ import { GetSingleIcuDetailsComponent } from './ICUSetUP/get-single-icu-details/
     RegisterIcuDetailsComponent,
     DeleteIcuDetailsComponent,
     UpdateIcuDetailsComponent,
-    GetSingleIcuDetailsComponent
+    AlertAuthenticationComponent,
+    AlertHomePageComponent,
+    SendAlertsComponent,
+    //GetSingleIcuDetailsComponent
   ],
   imports: [
     BrowserModule,
@@ -36,7 +43,7 @@ import { GetSingleIcuDetailsComponent } from './ICUSetUP/get-single-icu-details/
     HttpClientModule
     
   ],
-  providers: [ConnectToIcuControllerService],
+  providers: [ConnectToIcuControllerService,ConnectToAlertControllerService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

@@ -1,0 +1,18 @@
+<p>Alert</p>
+
+<br>
+<label>Patient Id</label>
+<input #patientId type="text" id="patientId" name="patientId" required>
+<br>
+<label>BPM</label>
+<input #bpm type="text" id="bpm" name="bpm" required>
+<br>
+<label>Spo2</label>
+<input #spo2 type="text" id="spo2" name="spo2" required>
+<br>
+<label>RR</label>
+<input #rr type="text" id="rr" name="rr" required>
+<br>
+
+<button (click)="getBody(patientId.value,bpm.value,spo2.value,rr.value)">Submit</button>
+<p>{{message?.messages}}</p>
