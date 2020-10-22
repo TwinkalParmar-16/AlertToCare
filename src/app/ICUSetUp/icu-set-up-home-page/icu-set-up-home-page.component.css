@@ -1,0 +1,36 @@
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color:white;
+    background-image: url('C:/Users/320104085/OneDrive - Philips/Bootcamp/PersonalGit-GUI/AlertToCare/Images/AlertTocarefrontPage.jpg');
+    background-repeat: no-repeat ;
+    /*height: 505px;*/
+  }
+  
+  .topnav {
+    margin-top: 0px;
+    overflow: hidden;
+    background-color:#4d79ff;
+  }
+  
+  .topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  .topnav a:hover {
+    background-color:#ccd9ff;
+    color:#003366;
+  }
+  
+  .topnav a.active {
+    background-color:#99b3ff;
+    color: white;
+  }
+  
+  

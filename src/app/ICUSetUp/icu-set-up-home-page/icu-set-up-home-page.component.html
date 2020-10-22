@@ -1,3 +1,4 @@
+<!--
 <p>icu-set-up-home-page works!</p>
 
 <header>
@@ -14,3 +15,19 @@
 <router-outlet></router-outlet>
 <footer>
 </footer>
+-->
+
+<body>
+    <div class="topnav">
+            <a routerLink="AllIcus">All ICU</a>
+            <a routerLink="GetSingleIcuDetail">Get Single ICU</a>
+            <a routerLink="RegisterIcu">Register ICU</a>
+            <a routerLink="DeleteIcu">Delete ICU</a>
+            <a routerLink="UpdateIcuDetails">Update ICU Details</a>
+    </div>
+      
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+    
+</body>

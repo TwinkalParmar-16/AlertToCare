@@ -1,15 +1,24 @@
-
-
+<!--
 <header>
 </header>
-
 <p>Main Page</p>
-
-<li><a routerLink="Authentication">SetUp ICU</a>
-<li><a routerLink="AlertAuthentication">Generate Alerts</a>
-<li><a routerLink="PatientAuthentication">Patient Details</a>
-
+<a routerLink="Authentication">SetUp ICU</a>
+<a routerLink="AlertAuthentication">Generate Alerts</a>
+<a routerLink="PatientAuthentication">Patient Details</a>
 <br>
     <router-outlet></router-outlet>
 <footer>
 </footer>
+-->
+<body>
+<div class="topnav">
+    <a routerLink="Authentication">SetUp ICU</a>
+    <a routerLink="AlertAuthentication">Generate Alerts</a>
+    <a routerLink="PatientAuthentication">Patient Details</a>
+</div>
+  
+<div>
+    <router-outlet></router-outlet>
+</div>
+
+</body>
