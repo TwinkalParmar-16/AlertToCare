@@ -32,6 +32,7 @@ export class DischargePatientComponent implements OnInit {
 
         this.message=data;
         console.log(data);
+        alert(this.message.messages);
       }
     )
     

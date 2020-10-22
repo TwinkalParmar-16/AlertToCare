@@ -1,13 +1,15 @@
-<p>update-icu-details works!</p>
 
 <br>
-<label>ICU Id</label>
-<input #icuId type="text" id="icuId" name="icuId" required>
-<label>No Of Beds</label>
-<input #noOfBeds type="text" id="noOfBeds" name="noOfBeds" required>
-<label>Layout</label>
-<input #layout type="text" id="layout" name="layout" required>
+<h2>Update ICU</h2>
+<div>
+    <div class="div2">
+        <label>ICU Id</label>
+        <input #icuId type="text" id="icuId" name="icuId" required>
+        <label>No Of Beds</label>
+        <input #noOfBeds type="text" id="noOfBeds" name="noOfBeds" required>
+        <label>Layout</label>
+        <input #layout type="text" id="layout" name="layout" required>    
+        <button (click)="getBody(noOfBeds.value,layout.value,icuId.value)">Update</button>
+    </div>
+</div>
 
-<button (click)="getBody(noOfBeds.value,layout.value,icuId.value)">Submit</button>
-
-<p>{{message?.messages}}</p>

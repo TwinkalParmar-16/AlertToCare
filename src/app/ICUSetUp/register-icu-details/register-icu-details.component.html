@@ -1,11 +1,12 @@
-<p>register-icu-details works!</p>
-
 <br>
-<label>No Of Beds</label>
-<input #noOfBeds type="text" id="noOfBeds" name="noOfBeds" required>
-<label>Layout</label>
-<input #layout type="text" id="layout" name="layout" required>
+<h2>Register ICU</h2>
+<div>
+    <div class="div2">
+        <label>No Of Beds</label>
+        <input #noOfBeds type="text" id="noOfBeds" name="noOfBeds" required>
+        <label>Layout</label>
+        <input #layout type="text" id="layout" name="layout" required>        
+        <button (click)="getBody(noOfBeds.value,layout.value)">Register</button>
+    </div>
+</div>
 
-<button (click)="getBody(noOfBeds.value,layout.value)">Submit</button>
-
-<p>{{message?.messages}}</p>

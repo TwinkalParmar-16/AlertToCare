@@ -1,28 +1,40 @@
-<p>patient-details-by-patient-id works!</p>
-<p>patient-details-by-icu-id works!</p>
-<h1>Patient</h1>
-<input #currentPatientId type="text" id="currentPatientId" name="currentPatientId?" required>
-<button (click)="getCurrentId(currentPatientId.value)">Submit</button>
+<br>
+<div>
+  <div class="div2">
+      <label>Enter Patient Id</label>
+      <br>
+      <input #currentPatientId type="text" id="currentPatientId" name="currentPatientId?" required>
+      <button (click)="getCurrentId(currentPatientId.value)">Submit</button>
+   </div>
+</div>
 
-<table>
-  <tr>
-  <th>Patient_ID</th>
-  <th>Name</th>
-  <th>Age</th>
-  <th>Blood_Group</th>
-  <th>Address</th>
-  <th>ICU_ID</th>
-  <th>Bed_Number</th>
-  </tr>
+<h2>Patient Details</h2>
 
- <tr>
-   <td>{{ Patient?.id}}</td>
-   <td>{{ Patient?.name}}</td>
-   <td>{{ Patient?.age}}</td>
-   <td>{{ Patient?.bloodGroup}}</td>
-   <td>{{ Patient?.address}}</td>
-   <td>{{ Patient?.icuId}}</td>
-   <td>{{ Patient?.bedNumber}}</td>
- </tr>
-  </table>
- 
+<div class="patientDetails">
+<table id="patient">
+    <tr>
+      <th>Name</th>
+      <td>{{ Patient?.name}}</td>
+    </tr>
+    <tr>
+      <th>Age</th>
+      <td>{{ Patient?.age}}</td>
+    </tr>
+    <tr>
+      <th>Blood Group</th>
+      <td>{{ Patient?.bloodGroup}}</td>    
+    </tr>
+    <tr>
+      <th>Address</th>
+      <td>{{ Patient?.address}}</td>
+    </tr>
+    <tr>
+      <th>ICU ID</th>
+      <td>{{ Patient?.icuId}}</td>
+    </tr>
+    <tr>
+      <th>Bed Number</th>
+      <td>{{ Patient?.bedNumber}}</td>
+    </tr>
+</table>
+</div>

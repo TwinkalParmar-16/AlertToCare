@@ -1,21 +1,22 @@
-<p>update-patient-details works!</p>
-
 <br>
-<label>Pateint_Id</label>
-<input #patientid type="text" id="patientid" name="patient" required>
-<label>Name</label>
-<input #name type="text" id="name" name="name" required>
-<label>Age</label>
-<input #age type="text" id="age" name="age" required>
-<label>Blood_Group</label>
-<input #bloodgroup type="text" id="bloodgroup" name="bloodgroup" required>
-<label>Address</label>
-<input #address type="text" id="address" name="address" required>
-<label>ICU_ID</label>
-<input #icuid type="text" id="icuid" name="icuid" required>
-<label>Bed_Number</label>
-<input #bednumber type="text" id="bednumber" name="bednumber" required>
+<h2>Update Patient Details</h2>
+<div>
+    <div class="div2">
+        <label>Pateint Id</label>
+        <input #patientid type="text" id="patientid" name="patient" required>
+        <label>Name</label>
+        <input #name type="text" id="name" name="name" required>
+        <label>Age</label>
+        <input #age type="text" id="age" name="age" required>
+        <label>Blood Group</label>
+        <input #bloodgroup type="text" id="bloodgroup" name="bloodgroup" required>
+        <label>Address</label>
+        <input #address type="text" id="address" name="address" required>
+        <label>ICU ID</label>
+        <input #icuid type="text" id="icuid" name="icuid" required>
+        <label>Bed Number</label>
+        <input #bednumber type="text" id="bednumber" name="bednumber" required>
+        <button (click)="getBody(patientid.value,name.value,age.value,bloodgroup.value,address.value,icuid.value,bednumber.value)">Submit</button>
+    </div>
+</div>
 
-<button (click)="getBody(patientid.value,name.value,age.value,bloodgroup.value,address.value,icuid.value,bednumber.value)">Submit</button>
-
-<p>{{message?.messages}}</p>

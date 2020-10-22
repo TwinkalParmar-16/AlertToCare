@@ -33,6 +33,10 @@ export class PatientDetailsByIcuIdComponent implements OnInit {
       {
         alert("ICU ID "+PatientIcuId+"not present");
       }
+      else
+      {
+        alert("ICU id submitted sucessfully!!");
+      }
       }
     )
 

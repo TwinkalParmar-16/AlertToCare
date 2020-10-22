@@ -1,5 +1,10 @@
-<p>discharge-patient works!</p>
-<input #currentId type="text" id="currentPatientId" name="currentPatientId?" required>
-<button (click)="getCurrentId(currentId.value)">Submit</button>
+<br>
+<h2>Discharge Patient</h2>
+<div>
+    <div class="div2">
+        <label>Enter Patient Id</label>
+        <input #currentId type="text" id="currentPatientId" name="currentPatientId?" required>
+        <button (click)="getCurrentId(currentId.value)">Discharge</button>
+    </div>
+</div>
 
-<p>{{message?.messages}}</p>

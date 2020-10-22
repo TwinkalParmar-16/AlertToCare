@@ -36,6 +36,7 @@ export class UpdatePatientDetailsComponent implements OnInit {
 
       data=>{
         this.message=data;
+        alert(this.message.messages);
       }
     )
   }

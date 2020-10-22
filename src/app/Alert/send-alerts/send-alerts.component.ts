@@ -18,7 +18,8 @@ export class SendAlertsComponent implements OnInit {
   }
 
   public getBody(patientId,bpm,spo2,rr){
-     
+    
+    alert("Details Registered!!");
     var patientVitals=new PatientVital();
     //patientVitals.id=21;
     patientVitals.id=parseInt(patientId);
@@ -33,6 +34,7 @@ export class SendAlertsComponent implements OnInit {
     .subscribe(
       data=>{
         this.message=data;
+        alert(this.message.messages);
       }
     )
 

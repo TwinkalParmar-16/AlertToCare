@@ -35,6 +35,7 @@ export class AdmitPatientComponent implements OnInit {
     .subscribe(
       data=>{
         this.message=data;
+        alert(this.message.messages);
       }
     )
   }
