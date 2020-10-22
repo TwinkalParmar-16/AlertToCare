@@ -1,0 +1,27 @@
+<p>patient-details-by-icu-id works!</p>
+<h1>Patient</h1>
+<input #currentPatientId type="text" id="currentPatientId" name="currentPatientId?" required>
+<button (click)="getCurrentId(currentPatientId.value)">Submit</button>
+
+<table>
+  <tr>
+  <th>Patient_ID</th>
+  <th>Name</th>
+  <th>Age</th>
+  <th>Blood_Group</th>
+  <th>Address</th>
+  <th>ICU_ID</th>
+  <th>Bed_Number</th>
+  </tr>
+
+  <tr *ngFor="let CurrentPatient of currentPatient">
+   <td>{{ CurrentPatient?.id}}</td>
+   <td>{{ CurrentPatient?.name}}</td>
+   <td>{{ CurrentPatient?.age}}</td>
+   <td>{{ CurrentPatient?.bloodGroup}}</td>
+   <td>{{ CurrentPatient?.address}}</td>
+   <td>{{ CurrentPatient?.icuId}}</td>
+   <td>{{ CurrentPatient?.bedNumber}}</td>
+ </tr>
+  </table>
+ 

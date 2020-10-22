@@ -119,6 +119,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "AlertToCare"
+    }
+  },
+  "defaultProject": "AlertToCare",
+  "cli": {
+    "analytics": "ea84599f-6324-4068-9972-1d6e0de3dc19"
+  }
 }

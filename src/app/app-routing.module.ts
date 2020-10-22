@@ -12,7 +12,14 @@ import { GetSingleIcuDetailsComponent} from '../app/ICUSetUp/get-single-icu-deta
 import { AlertAuthenticationComponent } from '../app/Alert/alert-authentication/alert-authentication.component';
 import { AlertHomePageComponent} from '../app/Alert/alert-home-page/alert-home-page.component';
 import { SendAlertsComponent } from '../app/Alert/send-alerts/send-alerts.component';
-
+//Patient 
+import { UpdatePatientDetailsComponent } from './PatientDetails/update-patient-details/update-patient-details.component';
+import { DischargePatientComponent } from './PatientDetails/discharge-patient/discharge-patient.component';
+import { AdmitPatientComponent } from './PatientDetails/admit-patient/admit-patient.component';
+import { PatientDetailsByPatientIdComponent } from './PatientDetails/patient-details-by-patient-id/patient-details-by-patient-id.component';
+import { PatientDetailsByIcuIdComponent } from './PatientDetails/patient-details-by-icu-id/patient-details-by-icu-id.component';
+import { PatientAutenticationComponent } from './PatientDetails/patient-autentication/patient-autentication.component';
+import { PatientDetailsHomePageComponent } from './PatientDetails/patient-details-home-page/patient-details-home-page.component';
 const routes: Routes = [
   { 
     path: '',   
@@ -30,7 +37,11 @@ const routes: Routes = [
        {
          path:'AlertAuthentication',
          component: AlertAuthenticationComponent
-       }
+       },
+       {
+        path: 'PatientAuthentication', // child route path
+        component: PatientAutenticationComponent // child route component that the router renders
+         }
        
       ] 
       
@@ -62,6 +73,34 @@ const routes: Routes = [
            component:GetSingleIcuDetailsComponent
          }
         ]  
+    },
+    //Patient
+    {
+      path:"PatientDetailsHomePage",
+      component:PatientDetailsHomePageComponent,
+      children: [
+        {
+        path: 'PatientDetailsByICUId', // child route path
+        component: PatientDetailsByIcuIdComponent // child route component that the router renders
+         },
+         {
+           path:'PatientDetailsByPatientId',
+           component:PatientDetailsByPatientIdComponent
+         },
+         {
+           path:'AdmitPatient',
+           component:AdmitPatientComponent
+         },
+         {
+           path:'DischargePatient',
+           component:DischargePatientComponent
+         },
+         {
+           path:'UpdatePatientDetails',
+           component:UpdatePatientDetailsComponent
+         }
+        ]  
+    
     },
 
     {
