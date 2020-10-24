@@ -19,6 +19,11 @@ export class SendAlertsComponent implements OnInit {
 
   public getBody(patientId,bpm,spo2,rr){
     
+    if(!patientId || !bpm || !bpm || !spo2 || !rr)
+    {
+      alert("Fields can not be empty!!");
+    }
+    else{
     alert("Details Registered!!");
     var patientVitals=new PatientVital();
     //patientVitals.id=21;
@@ -37,8 +42,24 @@ export class SendAlertsComponent implements OnInit {
         alert(this.message.messages);
       }
     )
-
+    }
   }
+
+  public turnoff(patientId,bpm,spo2,rr){
+
+    if(!patientId || !bpm || !bpm || !spo2 || !rr)
+    {
+      alert("Fields can not be empty!!");
+    }
+    else{
+     alert("Alert turned off for patient id "+patientId+" !!");
+     patientId=NaN;
+     bpm=NaN;
+     spo2=NaN;
+     rr=NaN;
+    }
+     
+     }
 
 
 }

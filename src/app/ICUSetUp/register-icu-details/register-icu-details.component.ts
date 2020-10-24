@@ -25,6 +25,16 @@ export class RegisterIcuDetailsComponent implements OnInit {
     //icu.layout="C";
     console.log(noOfBeds);
     console.log(layout);
+
+    if(!noOfBeds)
+    {
+      alert("No of beds can not be empty!!");
+    }
+    if(layout=="")
+    {
+      alert("Layout can not be empty!!");
+    }
+
     icu.numberOfBeds=parseInt(noOfBeds);
     icu.layout=layout;
     this.connectToIcuControllerService.registerICU(icu)

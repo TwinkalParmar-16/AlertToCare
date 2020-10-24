@@ -23,8 +23,17 @@ export class AdmitPatientComponent implements OnInit {
 
   public getBody(icuId,name,age,bloodgroup,address,bednumber){
    
-    var patient=new PatientModelWithoutId();
-    patient.IcuId = icuId;
+   console.log(icuId+" "+name+" "+age+" "+bloodgroup+" "+address+" "+bednumber);
+
+   if(!icuId || name=="" || !age || bloodgroup==" " || address=="" || !bednumber)
+   {
+     alert("Fields can not be empty!!");
+   }
+    
+   else
+   {
+  var patient=new PatientModelWithoutId();
+  patient.IcuId = icuId;
   patient.name = name;
   patient.age = parseInt(age);
   patient.bloodGroup=bloodgroup;
@@ -38,6 +47,7 @@ export class AdmitPatientComponent implements OnInit {
         alert(this.message.messages);
       }
     )
+   }
   }
 
 

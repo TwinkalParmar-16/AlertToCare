@@ -28,8 +28,14 @@ export class GetSingleIcuDetailsComponent implements OnInit {
   public getCurrentId(id:ICUId)
   {
      //console.log("Inside getCurrentId");
+     
      this.currentIcuId=id;
-     //console.log(this.currentIcuId);
+     console.log(this.currentIcuId);
+
+     if(!this.currentIcuId)
+     {
+       alert("ICU Id can not be empty!!");
+     }
      this.getIcuById(this.currentIcuId);
   }
 

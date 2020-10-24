@@ -8,6 +8,10 @@ body {
     /*height: 505px;*/
   }
   
+  .topnav .logout
+  {
+    color: black;
+  }
   .topnav {
     margin-top: 0px;
     overflow: hidden;

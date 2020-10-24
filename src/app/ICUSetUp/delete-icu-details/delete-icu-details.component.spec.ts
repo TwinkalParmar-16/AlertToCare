@@ -1,5 +1,4 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { DeleteIcuDetailsComponent } from './delete-icu-details.component';
 
 describe('DeleteIcuDetailsComponent', () => {
@@ -21,5 +20,11 @@ describe('DeleteIcuDetailsComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it(`should have as title 'AlertToCare'`, () => {
+    const fixture = TestBed.createComponent(DeleteIcuDetailsComponent);
+    const app = fixture.componentInstance;
+    expect(app.currentIcuId).toEqual('AlertToCare');
   });
 });

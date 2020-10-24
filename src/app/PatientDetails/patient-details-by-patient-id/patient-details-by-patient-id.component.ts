@@ -19,6 +19,10 @@ export class PatientDetailsByPatientIdComponent implements OnInit {
   {
      //console.log("Inside getCurrentId");
      this.currentPatientId=id;
+     if(!this.currentPatientId)
+     {
+       alert("Patient Id can not be empty!!");
+     }
      //console.log(this.currentIcuId);
      this.getPatientById(this.currentPatientId);
   }
@@ -32,7 +36,7 @@ export class PatientDetailsByPatientIdComponent implements OnInit {
       console.log(data);
       if(this.Patient.id==0)
       {
-        alert("Patient Id"+PatientId+"Doesnt exists!!")
+        alert("Patient Id "+PatientId+" does not exists!")
       }
     }
         )

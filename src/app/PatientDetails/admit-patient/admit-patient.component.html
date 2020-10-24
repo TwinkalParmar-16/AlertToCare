@@ -2,6 +2,7 @@
 <h2>Admit Patient</h2>
 <div>
     <div class="div2">
+        
         <label>ICU Id</label>
         <input #icu type="text" id="icu" name="icu" required>
         <label>Name</label>
@@ -15,6 +16,7 @@
         <label>Bed Number</label>
         <input #bednumber type="text" id="bednumber" name="bednumber" required>
         <button (click)="getBody(icu.value,name.value,age.value,bloodgroup.value,address.value,bednumber.value)">Admit</button>
+    
     </div>
 </div>
 

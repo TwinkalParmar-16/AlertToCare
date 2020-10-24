@@ -17,8 +17,14 @@ export class PatientDetailsByIcuIdComponent implements OnInit {
   }
   public getCurrentId(id:ICUId)
   {
+    
      //console.log("Inside getCurrentId");
      this.currentPatientIcuId=id;
+
+     if(!this.currentPatientIcuId)
+     {
+       alert("Icu Id can not be empty!!");
+     }
      //console.log(this.currentIcuId);
      this.getIcuById(this.currentPatientIcuId);
   }
@@ -31,11 +37,7 @@ export class PatientDetailsByIcuIdComponent implements OnInit {
       this.currentPatient=data;
       if(this.currentPatient.length==0)
       {
-        alert("ICU ID "+PatientIcuId+"not present");
-      }
-      else
-      {
-        alert("ICU id submitted sucessfully!!");
+        alert("ICU ID "+PatientIcuId+" not present");
       }
       }
     )

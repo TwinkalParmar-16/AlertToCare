@@ -21,6 +21,10 @@ export class UpdateIcuDetailsComponent implements OnInit {
   
   public getBody(noOfBeds,layout,id){
    
+    if(!noOfBeds || layout=="" || !id)
+    {
+      alert("Fields can not be empty!!");
+    }
     
     var updateIcu=new ICUModelWithoutId();
     //updateIcu.numberOfBeds=101;

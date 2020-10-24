@@ -7,7 +7,13 @@ body {
     background-repeat: no-repeat ;
     /*height: 505px;*/
   }
-  
+
+  .topnav .logout
+  {
+    color: black;
+    padding-left: 300px;
+  }
+
   .topnav {
     margin-top: 0px;
     overflow: hidden;
@@ -33,4 +39,4 @@ body {
     color: white;
   }
   
-  
+ 

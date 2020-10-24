@@ -7,6 +7,13 @@ body {
     background-repeat: no-repeat ;
     /*height: 505px;*/
   }
+
+  .topnav .logout
+  {
+    color: black;
+    padding-left: 100px;
+  }
+
   
   .topnav {
     margin-top: 0px;

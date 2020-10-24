@@ -16,10 +16,16 @@ export class UpdatePatientDetailsComponent implements OnInit {
   ngOnInit(): void {
   }
   
-  public getBody(patientid,name,age,bloodgroup,address,icuid,bednumber){
+  public getBody(patientid,name,age,bloodgroup,address,icuid,bednumber)
+  {
    
-    
-    var updatePatientDetails=new PatientModelWithoutId();
+  if(!patientid || name=="" || !age || bloodgroup=="" || address=="" || !icuid || !bednumber)
+  {
+    alert("Fields can not be empty!!");
+  }
+  else
+  {
+  var updatePatientDetails=new PatientModelWithoutId();
     //updateIcu.numberOfBeds=101;
     //updateIcu.layout="Z";
   updatePatientDetails.name=name;
@@ -39,6 +45,8 @@ export class UpdatePatientDetailsComponent implements OnInit {
         alert(this.message.messages);
       }
     )
+
+  }
   }
 }
 

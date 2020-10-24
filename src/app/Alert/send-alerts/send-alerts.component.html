@@ -12,9 +12,10 @@
         <input #spo2 type="text" id="spo2" name="spo2" required>
         <br>
         <label>Respiratory Rate(RR) </label>
-        <input #rr type="text" id="rr" name="rr" required>
+        <input #rr type="text" id="rr" name="rr"  required>
         <br>
         <button (click)="getBody(patientId.value,bpm.value,spo2.value,rr.value)">Submit</button>
+        <button (click)="turnoff(patientId.value,bpm.value,spo2.value,rr.value)">TurnOff</button>
     </div>
 </div>
 
