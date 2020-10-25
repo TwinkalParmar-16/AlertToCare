@@ -11,7 +11,7 @@ import { AllIcusDetailsComponent } from './ICUSetUp/all-icus-details/all-icus-de
 import { RegisterIcuDetailsComponent } from './ICUSetUp/register-icu-details/register-icu-details.component';
 import { DeleteIcuDetailsComponent } from './ICUSetUp/delete-icu-details/delete-icu-details.component';
 import { UpdateIcuDetailsComponent } from './ICUSetUp/update-icu-details/update-icu-details.component';
-
+import { RouterModule, Routes } from '@angular/router';
 
 //connect to api
 import { ConnectToIcuControllerService} from './IcuServices/connect-to-icu-controller.service';
@@ -57,7 +57,8 @@ import {ConnectToOccupancyManagementControllerService} from './PatientServices/c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    RouterModule.forRoot([])
     
   ],
   providers: [ConnectToIcuControllerService,ConnectToAlertControllerService,ConnectToOccupancyManagementControllerService],

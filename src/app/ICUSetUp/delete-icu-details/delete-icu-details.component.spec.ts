@@ -22,9 +22,5 @@ describe('DeleteIcuDetailsComponent', () => {
     expect(component).toBeTruthy();
   });
 
-  it(`should have as title 'AlertToCare'`, () => {
-    const fixture = TestBed.createComponent(DeleteIcuDetailsComponent);
-    const app = fixture.componentInstance;
-    expect(app.currentIcuId).toEqual('AlertToCare');
-  });
+ 
 });

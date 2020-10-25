@@ -55,9 +55,11 @@ h2
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 50%;
+    background-color: transparent;
 }
+
   
-#patient td, #icu th
+#patient td, #patient th
 {
     border: 1px solid #ddd;
     padding: 8px;
@@ -67,12 +69,14 @@ h2
 #patient tr:nth-child(even)
 {
     background-color: #f2f2f2;
+    background-color: transparent;
 }
 
   
 #patient tr:hover 
 {
     background-color: #ddd;
+    background-color: transparent;
 }
   
 #patient th 

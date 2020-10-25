@@ -1,7 +1,7 @@
 import { TestBed } from '@angular/core/testing';
+import { Router } from '@angular/router';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
-import { Location } from '@angular/common';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -9,30 +9,20 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule
       ],
+      providers: [
+        // Other provides...
+        { provide: Router, useClass: class { navigate = jasmine.createSpy("navigate"); } }
+      ],
       declarations: [
         AppComponent
       ],
     }).compileComponents();
   });
 
-  it('should create the app', () => {
+  it('should create the app',async() => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'AlertToCare'`, () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    const app = fixture.componentInstance;
-    expect(app.title).toEqual('AlertToCare');
-  });
-
-  it('navigates to another route when (...)', () => {
-    // The type annotation can be left out as it's inferred from `TestBed.inject`
-    const location: Location = TestBed.inject(Location);
-    
-    // (...)
-    expect(location.path()).toBe('/PatientDetailsHomePage/PatientDetailsByICUId');
-  });
- 
 });

@@ -55,6 +55,7 @@ h2
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    background-color: white;
 }
   
 #patient td, #patient th

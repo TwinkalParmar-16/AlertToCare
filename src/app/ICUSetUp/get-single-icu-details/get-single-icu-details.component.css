@@ -54,6 +54,8 @@ h2
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 50%;
+    background-color: white;
+    background-color: transparent;
 }
   
 #icu td, #icu th
@@ -65,7 +67,7 @@ h2
   
 #icu tr:nth-child(even)
 {
-    background-color: #f2f2f2;
+    background-color:transparent;
 }
 
   
