@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { IcuSetUpHomePageComponent } from './icu-set-up-home-page.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('IcuSetUpHomePageComponent', () => {
   let component: IcuSetUpHomePageComponent;
@@ -8,6 +9,7 @@ describe('IcuSetUpHomePageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports:[HttpClientTestingModule],
       declarations: [ IcuSetUpHomePageComponent ]
     })
     .compileComponents();
@@ -19,7 +21,7 @@ describe('IcuSetUpHomePageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('ICU Setup HomePage created', () => {
     expect(component).toBeTruthy();
   });
 });

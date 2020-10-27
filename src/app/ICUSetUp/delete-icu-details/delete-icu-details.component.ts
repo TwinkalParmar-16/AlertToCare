@@ -21,11 +21,17 @@ export class DeleteIcuDetailsComponent implements OnInit {
   public getCurrentId(id:ICUId)
   {
      this.currentIcuId=id;
-     if(!this.currentIcuId)
+     if(this.CheckCurrentIcuId(this.currentIcuId))
      {
        alert("ICU Id can not be empty!");
      }
      this.DeleteIcuById(this.currentIcuId);
+  }
+  public CheckCurrentIcuId(id): Boolean
+  {
+      if(!id)
+      return true;
+      return false;
   }
 
   public DeleteIcuById(icuId:ICUId){

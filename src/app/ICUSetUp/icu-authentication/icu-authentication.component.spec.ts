@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { IcuAuthenticationComponent } from './icu-authentication.component';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('IcuAuthenticationComponent', () => {
   let component: IcuAuthenticationComponent;
@@ -8,6 +8,7 @@ describe('IcuAuthenticationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [RouterTestingModule],
       declarations: [ IcuAuthenticationComponent ]
     })
     .compileComponents();
@@ -19,7 +20,13 @@ describe('IcuAuthenticationComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('ICU Authentication Component Created', () => {
     expect(component).toBeTruthy();
   });
+  it('Valid Password',()=>{
+    expect(component.checkPin("Admin@123")).toBeTruthy();
+  });
+  it('InValid Password',()=>{
+    expect(component.checkPin("Aarna@123")).toBeFalsy();
+  })
 });

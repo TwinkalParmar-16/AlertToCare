@@ -21,7 +21,7 @@ export class UpdateIcuDetailsComponent implements OnInit {
   
   public getBody(noOfBeds,layout,id){
    
-    if(!noOfBeds || layout=="" || !id)
+    if(this.CheckInputFields(noOfBeds,layout,id))
     {
       alert("Fields can not be empty!!");
     }
@@ -43,5 +43,12 @@ export class UpdateIcuDetailsComponent implements OnInit {
         alert(this.message.messages);
       }
     )
+  }
+
+  public CheckInputFields(noOfBeds,layout,id):Boolean
+  {
+    if(!noOfBeds || layout == "" || !id)
+    return true;
+    return false;
   }
 }

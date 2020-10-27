@@ -1,6 +1,7 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { AllIcusDetailsComponent } from './all-icus-details.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AllIcusDetailsComponent', () => {
   let component: AllIcusDetailsComponent;
@@ -8,6 +9,7 @@ describe('AllIcusDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       declarations: [ AllIcusDetailsComponent ]
     })
     .compileComponents();
@@ -19,7 +21,7 @@ describe('AllIcusDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('All ICU Details component created', () => {
     expect(component).toBeTruthy();
   });
 });

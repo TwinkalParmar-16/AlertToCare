@@ -2,6 +2,7 @@ import { PatientDetailsHomePageComponent } from './../patient-details-home-page/
 import { Component, OnInit } from '@angular/core';
 import {Router,ActivatedRoute} from '@angular/router';
 
+
 @Component({
   selector: 'app-patient-autentication',
   templateUrl: './patient-autentication.component.html',
@@ -15,7 +16,7 @@ export class PatientAutenticationComponent implements OnInit {
 
   ngOnInit(): void {
   }
-  public checkPin(pin: string)
+  public checkPin(pin: string):Boolean
   {
      this.validPassword="Admin@123";
      if(pin === this.validPassword)
@@ -24,6 +25,7 @@ export class PatientAutenticationComponent implements OnInit {
         console.log("valid pin");
         alert("Authorzied User!");
         this.isAllowed=true;
+        return true;
      }
      else
      {
@@ -31,6 +33,7 @@ export class PatientAutenticationComponent implements OnInit {
      console.log("invalid pin");
      alert("Unauthorzied User!");
      }
+     return false;
   }
 
   private redirectToPatientDetailsHomePage(){

@@ -19,7 +19,7 @@ export class SendAlertsComponent implements OnInit {
 
   public getBody(patientId,bpm,spo2,rr){
     
-    if(!patientId || !bpm || !bpm || !spo2 || !rr)
+    if(this.CheckInputFields(patientId,bpm,spo2,rr))
     {
       alert("Fields can not be empty!!");
     }
@@ -47,7 +47,7 @@ export class SendAlertsComponent implements OnInit {
 
   public turnoff(patientId,bpm,spo2,rr){
 
-    if(!patientId || !bpm || !bpm || !spo2 || !rr)
+    if(this.CheckInputFields(patientId,bpm,spo2,rr))
     {
       alert("Fields can not be empty!!");
     }
@@ -61,5 +61,10 @@ export class SendAlertsComponent implements OnInit {
      
      }
 
+public CheckInputFields(patientId,bpm,spo2,rr){
+  if(!patientId || !bpm || !spo2 || !rr)
+  return true;
+  return false;
+}
 
 }

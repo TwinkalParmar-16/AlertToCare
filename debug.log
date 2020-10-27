@@ -16,3 +16,6 @@
 [1027/112602.217:ERROR:crash_report_database_win.cc(587)] GetFileAttributes C:\Users\320104~1\AppData\Local\Temp\karma-46299149\Crashpad: The system cannot find the file specified. (0x2)
 [1027/112605.314:ERROR:crash_report_database_win.cc(587)] GetFileAttributes C:\Users\320104~1\AppData\Local\Temp\karma-46299149\Crashpad: The system cannot find the file specified. (0x2)
 [1027/113644.437:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1027/123851.171:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1027/132543.308:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[1027/134404.683:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)

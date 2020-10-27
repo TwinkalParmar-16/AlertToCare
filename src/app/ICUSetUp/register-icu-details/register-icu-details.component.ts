@@ -26,11 +26,11 @@ export class RegisterIcuDetailsComponent implements OnInit {
     console.log(noOfBeds);
     console.log(layout);
 
-    if(!noOfBeds)
+    if(this.CheckNoOfBedsField(noOfBeds))
     {
       alert("No of beds can not be empty!!");
     }
-    if(layout=="")
+    if(this.CheckLayoutField(layout))
     {
       alert("Layout can not be empty!!");
     }
@@ -45,7 +45,18 @@ export class RegisterIcuDetailsComponent implements OnInit {
       }
     )
   }
-
+public CheckNoOfBedsField(noofbeds):Boolean
+{
+  if(!noofbeds)
+  return true;
+  return false; 
+}
+public CheckLayoutField(layout):Boolean
+{
+  if(layout=="")
+  return true;
+  return false; 
+}
 
 
 }

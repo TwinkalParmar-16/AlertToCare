@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { AlertAuthenticationComponent } from './alert-authentication.component';
+import {RouterTestingModule} from '@angular/router/testing';
 
 describe('AlertAuthenticationComponent', () => {
   let component: AlertAuthenticationComponent;
@@ -8,6 +8,7 @@ describe('AlertAuthenticationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports:[RouterTestingModule],
       declarations: [ AlertAuthenticationComponent ]
     })
     .compileComponents();
@@ -19,7 +20,13 @@ describe('AlertAuthenticationComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Alert Authentication Component Created', () => {
     expect(component).toBeTruthy();
   });
+  it('Valid Password',()=>{
+    expect(component.checkPin("AdminAlert@123")).toBeTruthy();
+  });
+  it('InValid Password',()=>{
+    expect(component.checkPin("Twinkal@123")).toBeFalsy();
+  })
 });

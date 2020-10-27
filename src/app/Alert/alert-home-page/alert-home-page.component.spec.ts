@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { AlertHomePageComponent } from './alert-home-page.component';
 
 describe('AlertHomePageComponent', () => {
@@ -8,6 +8,7 @@ describe('AlertHomePageComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports:[HttpClientTestingModule],
       declarations: [ AlertHomePageComponent ]
     })
     .compileComponents();
@@ -19,7 +20,7 @@ describe('AlertHomePageComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Alert Home Page Component Created', () => {
     expect(component).toBeTruthy();
   });
 });

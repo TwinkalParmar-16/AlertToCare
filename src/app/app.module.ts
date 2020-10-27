@@ -13,6 +13,7 @@ import { DeleteIcuDetailsComponent } from './ICUSetUp/delete-icu-details/delete-
 import { UpdateIcuDetailsComponent } from './ICUSetUp/update-icu-details/update-icu-details.component';
 import { RouterModule, Routes } from '@angular/router';
 
+
 //connect to api
 import { ConnectToIcuControllerService} from './IcuServices/connect-to-icu-controller.service';
 import { HttpClientModule } from '@angular/common/http';
@@ -58,8 +59,7 @@ import {ConnectToOccupancyManagementControllerService} from './PatientServices/c
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    RouterModule.forRoot([])
-    
+    RouterModule.forRoot([])  
   ],
   providers: [ConnectToIcuControllerService,ConnectToAlertControllerService,ConnectToOccupancyManagementControllerService],
   bootstrap: [AppComponent]

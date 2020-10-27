@@ -26,7 +26,7 @@ export class AdmitPatientComponent implements OnInit {
    
   console.log(icuId+" "+name+" "+age+" "+bloodgroup+" "+address+" "+bednumber);
 
-  if(!icuId || name=="" || !age || bloodgroup==" " || address=="" || !bednumber)
+  if(this.CheckInputFields(icuId,name,age,bloodgroup,address,bednumber))
    {
      alert("Fields can not be empty!!");
    }
@@ -51,11 +51,11 @@ export class AdmitPatientComponent implements OnInit {
    }
   }
 
-  public TestIcuId(icuId):string{
-    if(!icuId)
-    return "false";
-    return "true";
-  }
+public CheckInputFields(icuId,name,age,bloodgroup,address,bednumber):Boolean{
+  if(!icuId || name=="" || !age || bloodgroup=="" || address=="" || !bednumber)
+  return true;
+  return false;
+}
 
 
 }

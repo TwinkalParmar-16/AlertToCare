@@ -19,7 +19,7 @@ export class UpdatePatientDetailsComponent implements OnInit {
   public getBody(patientid,name,age,bloodgroup,address,icuid,bednumber)
   {
    
-  if(!patientid || name=="" || !age || bloodgroup=="" || address=="" || !icuid || !bednumber)
+  if(this.CheckInputFields(patientid,name,age,bloodgroup,address,icuid,bednumber))
   {
     alert("Fields can not be empty!!");
   }
@@ -48,5 +48,10 @@ export class UpdatePatientDetailsComponent implements OnInit {
 
   }
   }
-}
 
+  public CheckInputFields(patientid,name,age,bloodgroup,address,icuid,bednumber){
+    if(!patientid || name=="" || !age || bloodgroup=="" || address=="" || !icuid || !bednumber)
+     return true;
+     return false;
+}
+}

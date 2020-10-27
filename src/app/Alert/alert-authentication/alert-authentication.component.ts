@@ -16,7 +16,7 @@ export class AlertAuthenticationComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public checkPin(pin: string)
+  public checkPin(pin: string):Boolean
   {
      this.validPassword="AdminAlert@123";
      if(pin === this.validPassword)
@@ -25,6 +25,7 @@ export class AlertAuthenticationComponent implements OnInit {
         console.log("valid pin");
         alert("Authorzied User!");
         this.isAllowed=true;
+        return true;
      }
      else
      {
@@ -32,6 +33,7 @@ export class AlertAuthenticationComponent implements OnInit {
      console.log("invalid pin");
      alert("Unauthorzied User!");
      }
+     return false;
   }
 
   private redirectToAlertHomePage(){

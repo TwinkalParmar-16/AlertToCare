@@ -21,14 +21,18 @@ export class PatientDetailsByIcuIdComponent implements OnInit {
      //console.log("Inside getCurrentId");
      this.currentPatientIcuId=id;
 
-     if(!this.currentPatientIcuId)
+     if(this.CheckIcuId(this.currentPatientIcuId))
      {
        alert("Icu Id can not be empty!!");
      }
      //console.log(this.currentIcuId);
      this.getIcuById(this.currentPatientIcuId);
   }
-
+public CheckIcuId(IcuId):Boolean{
+  if(!IcuId)
+  return true;
+  return false;
+}
   public getIcuById(PatientIcuId:ICUId){
     console.log(PatientIcuId);
     this.connectToOccupancyControllerService.getPatientDetailWithIcuId(PatientIcuId)

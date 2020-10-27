@@ -19,12 +19,18 @@ export class PatientDetailsByPatientIdComponent implements OnInit {
   {
      //console.log("Inside getCurrentId");
      this.currentPatientId=id;
-     if(!this.currentPatientId)
+     if(this.CheckPatientId(this.currentPatientId))
      {
        alert("Patient Id can not be empty!!");
      }
      //console.log(this.currentIcuId);
      this.getPatientById(this.currentPatientId);
+  }
+  public CheckPatientId(id):Boolean
+  {
+    if(!id)
+    return true;
+    return false;
   }
 
   public getPatientById(PatientId:ICUId){

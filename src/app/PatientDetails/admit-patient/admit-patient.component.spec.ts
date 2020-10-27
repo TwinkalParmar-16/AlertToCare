@@ -19,7 +19,25 @@ describe('AdmitPatientComponent', () => {
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
-  it('Test string IcuId', () => {
-    expect(component.TestIcuId(27)).toEqual("true");
+  it('Test Valid Input Fields', () => {
+    expect(component.CheckInputFields(27,"Tom",39,"AB+","Gujurat",78)).toBeFalsy();
+  });
+  it('Test InValid Icu Id Field', () => {
+    expect(component.CheckInputFields(NaN,"Tom",39,"AB+","Gujurat",78)).toBeTruthy();
+  });
+  it('Test InValid name Field', () => {
+    expect(component.CheckInputFields(27,"",NaN,"AB+","Gujurat",78)).toBeTruthy();
+  });
+  it('Test InValid Blood Group Field', () => {
+    expect(component.CheckInputFields(27,"Tom",39,"","Gujurat",78)).toBeTruthy();
+  });
+  it('Test InValid Address Field', () => {
+    expect(component.CheckInputFields(27,"Tom",39,"AB+","",78)).toBeTruthy();
+  });
+  it('Test InValid Bed Number Field', () => {
+    expect(component.CheckInputFields(27,"Tom",39,"AB+","Gujurat",NaN)).toBeTruthy();
+  });
+  it('Test InValid Input Fields', () => {
+    expect(component.CheckInputFields(NaN,"",NaN,"","",NaN)).toBeTruthy();
   });
 });

@@ -21,13 +21,18 @@ export class DischargePatientComponent implements OnInit {
   public getCurrentId(id:ICUId)
   {
      this.currentId=id;
-     if(!this.currentId)
+     if(this.CheckCurrentId)
       {
           alert("Patient Id can not be empty!!");
       }
      this.DeletePatient(this.currentId);
   }
-
+public CheckCurrentId(id):Boolean
+{
+  if(!id)
+  return true
+  return false
+}
   public DeletePatient(PatientId:ICUId){
     
     this.connectToPatientControllerService.dischargePatient(PatientId)

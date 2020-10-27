@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { DeleteIcuDetailsComponent } from './delete-icu-details.component';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('DeleteIcuDetailsComponent', () => {
   let component: DeleteIcuDetailsComponent;
@@ -7,6 +8,7 @@ describe('DeleteIcuDetailsComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       declarations: [ DeleteIcuDetailsComponent ]
     })
     .compileComponents();
@@ -18,9 +20,19 @@ describe('DeleteIcuDetailsComponent', () => {
     fixture.detectChanges();
   });
 
-  it('should create', () => {
+  it('Delete ICU Details Component Created', () => {
     expect(component).toBeTruthy();
   });
+  it('ICU ID Field Validation', ()=> {
+    expect(component.CheckCurrentIcuId(8)).toBeFalsy();
+  });
+
+  it('ICU ID Field Validation for Invalid Input', ()=> {
+    expect(component.CheckCurrentIcuId(NaN)).toBeTruthy();
+  })
+
+
+
 
  
 });
