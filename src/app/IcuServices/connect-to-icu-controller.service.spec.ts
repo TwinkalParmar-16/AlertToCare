@@ -1,12 +1,14 @@
 import { TestBed } from '@angular/core/testing';
 import { ConnectToIcuControllerService } from './connect-to-icu-controller.service';
-import { of } from 'rxjs';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
+
 
 describe('ConnectToIcuControllerService', () => {
   let service: ConnectToIcuControllerService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({
+      imports: [HttpClientTestingModule],
       providers: [ ConnectToIcuControllerService]
     });
     service = TestBed.inject(ConnectToIcuControllerService);
@@ -14,9 +16,6 @@ describe('ConnectToIcuControllerService', () => {
   });
 
   it('should be created', () => {
-    expect(service).toBeTruthy();
-  });
-  it('should be created method 2', () => { // Remove inject()
     expect(service).toBeTruthy();
   });
 });

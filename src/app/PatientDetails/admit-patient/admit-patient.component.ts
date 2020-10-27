@@ -21,17 +21,18 @@ export class AdmitPatientComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  public getBody(icuId,name,age,bloodgroup,address,bednumber){
+  public getBody(icuId,name,age,bloodgroup,address,bednumber)
+  {
    
-   console.log(icuId+" "+name+" "+age+" "+bloodgroup+" "+address+" "+bednumber);
+  console.log(icuId+" "+name+" "+age+" "+bloodgroup+" "+address+" "+bednumber);
 
-   if(!icuId || name=="" || !age || bloodgroup==" " || address=="" || !bednumber)
+  if(!icuId || name=="" || !age || bloodgroup==" " || address=="" || !bednumber)
    {
      alert("Fields can not be empty!!");
    }
     
-   else
-   {
+  else
+  {
   var patient=new PatientModelWithoutId();
   patient.IcuId = icuId;
   patient.name = name;
@@ -50,6 +51,11 @@ export class AdmitPatientComponent implements OnInit {
    }
   }
 
+  public TestIcuId(icuId):string{
+    if(!icuId)
+    return "false";
+    return "true";
+  }
 
 
 }
