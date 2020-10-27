@@ -26,10 +26,10 @@ describe('DischargePatientComponent', () => {
   });
   it('Valid Id to Discharge',()=>
   {
-    expect(component.CheckCurrentId(8)).toBeFalsy;
+    expect(component.CheckCurrentId(8)).toBeFalsy();
   });
   it('InValid Id to Discharge',()=>
   {
-    expect(component.CheckCurrentId(NaN)).toBeTruthy;
+    expect(component.CheckCurrentId(NaN)).toBeTruthy();
   })
 });

@@ -21,7 +21,7 @@ export class DischargePatientComponent implements OnInit {
   public getCurrentId(id:ICUId)
   {
      this.currentId=id;
-     if(this.CheckCurrentId)
+     if(this.CheckCurrentId(this.currentId))
       {
           alert("Patient Id can not be empty!!");
       }
