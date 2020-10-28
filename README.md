@@ -33,27 +33,27 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### ICU 
 | Segment | Screenshot |
 | ------ | ------ |
-| Home Page |   ![image](/Images/HomePage.png)  |
+| Home Page |   ![image](/Images/HomePage.PNG)  |
 | ICU |   ![image](/Images/configure.png)  |
-| ICU Authentication |   ![image](/Images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/Images/ICUHomePage.png)  |
+| ICU Authentication |   ![image](/Images/ICUAutentication.PNG)  |
+| ICU Home Page |   ![image](/Images/ICUHomePage.PNG)  |
 | All ICU Details |   ![image](/Images/available_icu.png)  |
 | ICU Details |   ![image](/Images/ICU_details.png)  |
-| Add ICU |   ![image](/Images/RegisterICUMessage.png)  |
+| Add ICU |   ![image](/Images/RegisterICUMessage.PNG)  |
 | Delete |   ![image](/Images/deleteICU.png)  |
 | Update |   ![image](/Images/update_ICU.png)  |
-| Logout |   ![image](/Images/Logout.png)  |
+| Logout |   ![image](/Images/Logout.PNG)  |
 
 
 
 #### Patient
 | Segment | Screenshot |
 | ------ | ------ |
-| Patient Home Page |   ![image](/Images/PatientHomePage.png)  |
+| Patient Home Page |   ![image](/Images/PatientHomePage.PNG)  |
 | Patient details |   ![image](/Images/get_patient_details.png)  |
 | All Patients In ICU |   ![image](/Images/available_patients.png)  |
 | Admit Patient |   ![image](/Images/admit_patient.png)  |
-| Discharge Patient |   ![image](/Images/admit_patient.png)  |
+| Discharge Patient |   ![image](/Images/discharge_patient.png)  |
 | Update Patient Details |   ![image](/Images/update_patient.png)  |
 
 
@@ -61,12 +61,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### Alert
 | Segment | Screenshot |
 | ------ | ------ |
-| Vital Details |   ![image](/Images/SendAlert1.png)  |
-| Notification |   ![image](/Images/SendAlert2.png)  |
+| Vital Details |   ![image](/Images/SendAlert1.PNG)  |
+| Notification |   ![image](/Images/SendAlert2.PNG)  |
 
 ### Unit Testing With Karma
 | Segment | Screenshot |
 | ------ | ------ |
-| 1 |   ![image](/Images/Karma1.png)  |
-| 2 |   ![image](/Images/Karma2.png)  |
-| 3 |   ![image](/Images/Karma3.png)  |
+| 1 |   ![image](/Images/Karma1.PNG)  |
+| 2 |   ![image](/Images/Karma2.PNG)  |
+| 3 |   ![image](/Images/Karma3.PNG)  |
