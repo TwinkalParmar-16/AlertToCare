@@ -34,6 +34,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | Segment | Screenshot |
 | ------ | ------ |
 | Home Page |   ![image](/Images/HomePage.png)  |
+| ICU |   ![image](/Images/configure.png)  |
 | ICU Authentication |   ![image](/Images/ICUAutentication.png)  |
 | ICU Home Page |   ![image](/Images/ICUHomePage.png)  |
 | All ICU Details |   ![image](/Images/available_icu.png)  |
@@ -48,12 +49,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### Patient
 | Segment | Screenshot |
 | ------ | ------ |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+| Patient Home Page |   ![image](/Images/PatientHomePage.png)  |
+| Patient details |   ![image](/Images/get_patient_details.png)  |
+| All Patients In ICU |   ![image](/Images/available_patients.png)  |
+| Admit Patient |   ![image](/Images/admit_patient.png)  |
+| Discharge Patient |   ![image](/Images/admit_patient.png)  |
+| Update Patient Details |   ![image](/Images/update_patient.png)  |
 
 
 
