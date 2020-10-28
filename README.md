@@ -25,3 +25,50 @@ Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protrac
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+
+
+
+### GUI
+
+#### ICU 
+| Segment | Screenshot |
+| ------ | ------ |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+
+
+
+#### Patient
+| Segment | Screenshot |
+| ------ | ------ |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+
+
+
+#### Alert
+| Segment | Screenshot |
+| ------ | ------ |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+| Home Page |   ![image](/images/HomePage.png)  |
+| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+
+
+
+### Unit Testing With Karma
+| Segment | Screenshot |
+| ------ | ------ |
+| 1 |   ![image](/images/Karma1.png)  |
+| 2 |   ![image](/images/Karma2.png)  |
+| 3 |   ![image](/images/Karma3.png)  |
