@@ -42,7 +42,7 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 | Add ICU |   ![image](/Images/RegisterICUMessage.PNG)  |
 | Delete |   ![image](/Images/deleteICU.png)  |
 | Update |   ![image](/Images/update_ICU.png)  |
-| Logout |   ![image](/Images/Logout.PNG)  |
+| Logout |   ![image](/Images/Logout.png)  |
 
 
 
