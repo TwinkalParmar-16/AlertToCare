@@ -33,12 +33,15 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### ICU 
 | Segment | Screenshot |
 | ------ | ------ |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
+| Home Page |   ![image](/Images/HomePage.png)  |
+| ICU Authentication |   ![image](/Images/ICUAutentication.png)  |
+| ICU Home Page |   ![image](/Images/ICUHomePage.png)  |
+| All ICU Details |   ![image](/Images/available_icu.png)  |
+| ICU Details |   ![image](/Images/ICU_details.png)  |
+| Add ICU |   ![image](/Images/RegisterICUMessage.png)  |
+| Delete |   ![image](/Images/deleteICU.png)  |
+| Update |   ![image](/Images/update_ICU.png)  |
+| Logout |   ![image](/Images/Logout.png)  |
 
 
 
@@ -57,18 +60,12 @@ To get more help on the Angular CLI use `ng help` or go check out the [Angular C
 #### Alert
 | Segment | Screenshot |
 | ------ | ------ |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
-| Home Page |   ![image](/images/HomePage.png)  |
-| ICU Authentication |   ![image](/images/ICUAutentication.png)  |
-| ICU Home Page |   ![image](/images/ICUAutentication.png)  |
-
-
+| Vital Details |   ![image](/Images/SendAlert1.png)  |
+| Notification |   ![image](/Images/SendAlert2.png)  |
 
 ### Unit Testing With Karma
 | Segment | Screenshot |
 | ------ | ------ |
-| 1 |   ![image](/images/Karma1.png)  |
-| 2 |   ![image](/images/Karma2.png)  |
-| 3 |   ![image](/images/Karma3.png)  |
+| 1 |   ![image](/Images/Karma1.png)  |
+| 2 |   ![image](/Images/Karma2.png)  |
+| 3 |   ![image](/Images/Karma3.png)  |
