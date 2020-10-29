@@ -1,32 +1,41 @@
-on: push
-name: Build Angular
+  
+name: Lint, Test & Build
+
+on:
+  push:
+    branches: [ main ]
+
 jobs:
   build:
-    runs-on: ubuntu-latest
+
+    runs-on: windows-latest
+
     strategy:
       matrix:
         node-version: [12.x]
 
     steps:
-      - uses: actions/checkout@v1
+    - uses: actions/checkout@v2
+    - name: Use Node.js ${{ matrix.node-version }}
+      uses: actions/setup-node@v1
+      with:
+        node-version: ${{ matrix.node-version }}
+    
+    - name: Install node module
+      run: npm install
+      working-directory: angular
+    
+    - name: Install de
+      run: npm ci
+      working-directory: angular
+   
+    - name: Build
+      run: npm run build
+      working-directory: angular
 
-      - name: Cache node modules
-        uses: actions/cache@v1
-        with:
-          path: ~/.npm
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
-          restore-keys: |
-            ${{ runner.os }}-node-
-      - name: Node ${{ matrix.node-version }}
-        uses: actions/setup-node@v1
-        with:
-          node-version: ${{ matrix.node-version }}
-      - name: npm install and npm run build
-        run: |
-          npm i
-          npm run build:prod
-      - name: Push Build to Releases
-        uses: ncipollo/release-action@v1
-        with:
-          artifacts: "dist/angular-githubaction/*"
-          token: ${{ secrets.TOKEN }}
+    - name: Lint
+      run: npm run lint
+      working-directory: angular
+
+    - name: Test
+      run: npm run test
