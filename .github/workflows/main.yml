@@ -23,7 +23,6 @@ jobs:
     
     - name: Install node module
       run: npm install
-      working-directory: angular
     
     - name: Install node module
       run: npm ci
